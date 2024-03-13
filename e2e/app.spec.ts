@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("should navigate to the about page", async ({ page }) => {
-  await page.screenshot({ path: "screenshot.png" });
+  await page.screenshot({ path: "playwright-report/screenshot.png" });
 
   // Start from the index page (the baseURL is set via the webServer in the playwright.config.ts)
   await page.goto("/");

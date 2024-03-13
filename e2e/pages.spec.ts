@@ -4,7 +4,7 @@ test("should navigate to the about page", async ({ page }) => {
   // Start from the index page (the baseURL is set via the webServer in the playwright.config.ts)
   await page.goto("/home");
 
-  await page.screenshot({ path: "screenshot.png" });
+  await page.screenshot({ path: "playwright-report/screenshot.png" });
 
   // Find an element with the text 'About Page' and click on it
   await page.getByText("About Page").click();
