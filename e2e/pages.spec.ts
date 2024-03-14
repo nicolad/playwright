@@ -12,6 +12,6 @@ test("should navigate to the about page", async ({ page }) => {
   await expect(page).toHaveURL("/home/about");
   // The new page should contain an h1 with "About Page"
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "About Page"
+    "About Pages"
   );
 });
